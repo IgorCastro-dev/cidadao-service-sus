@@ -6,8 +6,17 @@ public class Cidadao {
     private Long id;
     private String nome;
     private String cpf;
+    private String email;
 
-    public Cidadao(Long id, String nome, String cpf) {
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Cidadao(Long id, String nome, String cpf, String email) {
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
