@@ -22,4 +22,5 @@ public class CidadaoEntity {
     private Long id;
     private String nome;
     private String cpf;
+    private String email;
 }

@@ -10,7 +10,8 @@ public class CidadaoMapper {
         return new CidadaoEntity(
                 cidadao.getId(),
                 cidadao.getNome(),
-                cidadao.getCpf()
+                cidadao.getCpf(),
+                cidadao.getEmail()
         );
     }
 
@@ -18,7 +19,8 @@ public class CidadaoMapper {
         return new Cidadao(
                 unidadeEntity.getId(),
                 unidadeEntity.getNome(),
-                unidadeEntity.getCpf()
+                unidadeEntity.getCpf(),
+                unidadeEntity.getEmail()
         );
     }
 }

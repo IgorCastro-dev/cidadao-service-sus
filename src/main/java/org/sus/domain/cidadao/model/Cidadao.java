@@ -8,18 +8,22 @@ public class Cidadao {
     private String cpf;
     private String email;
 
+    public Cidadao(Long id, String nome, String cpf, String email) {
+        this.id = id;
+        this.nome = nome;
+        this.cpf = cpf;
+        this.email = email;
+    }
+
+    public Cidadao() {
+    }
+
     public String getEmail() {
         return email;
     }
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public Cidadao(Long id, String nome, String cpf, String email) {
-        this.id = id;
-        this.nome = nome;
-        this.cpf = cpf;
     }
 
     public Long getId() {
