@@ -2,6 +2,7 @@ package org.sus.infrastructure.controller;
 
 import jakarta.inject.Inject;
 import jakarta.ws.rs.*;
+import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import org.sus.domain.cidadao.model.Cidadao;
 import org.sus.usecase.BuscaCidadaoUsecase;
@@ -29,12 +30,11 @@ public class CidadaoController {
     }
 
     @POST
-    @Produces("application/json")
-    @Consumes("application/json")
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
     public Response criaCidadao(Cidadao cidadao) {
         return Response.ok(criaCidadaoUsecase.execute(cidadao)).build();
     }
-
     @GET
     public Response listaCidadao() {
         return Response.ok(listaTodosCidadaoUsecase.execute()).build();
